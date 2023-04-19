@@ -1,0 +1,1 @@
+!function(){const e=document.querySelector("#app");if(!e)throw new Error("Нет элемента #app");e.innerHTML="Hello!"}();
