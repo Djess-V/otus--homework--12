@@ -1,8 +1,13 @@
 import { curry } from "./curry/curry";
 import { summator } from "./summator/summator";
+import Parallel from "./parallel/Parallel";
 
-const functions = [curry, summator],
-  titles = ["Функция каррирования", "Функция сумматор"],
+const functions = [curry, summator, Parallel],
+  titles = [
+    "Функция каррирования",
+    "Функция сумматор",
+    "Класс для параллельной потоковой обработки данных",
+  ],
   appEl: HTMLElement | null = document.querySelector("#app");
 if (!appEl) {
   throw new Error("Нет элемента #app");
