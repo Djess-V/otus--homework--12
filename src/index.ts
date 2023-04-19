@@ -1,12 +1,14 @@
 import { curry } from "./curry/curry";
 import { summator } from "./summator/summator";
 import Parallel from "./parallel/Parallel";
+import { spiral } from "./spiral/spiral";
 
-const functions = [curry, summator, Parallel],
+const functions = [curry, summator, Parallel, spiral],
   titles = [
     "Функция каррирования",
     "Функция сумматор",
     "Класс для параллельной потоковой обработки данных",
+    "Фукнция, возвращающая развернутую по спирали матрицу (любой размерности)",
   ],
   appEl: HTMLElement | null = document.querySelector("#app");
 if (!appEl) {
